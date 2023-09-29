@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas</title>
+    <link rel="stylesheet" href="styles/notas/global_n.css">
+</head>
+<body>
+    <div id="app">
+
+<main class="main">
+    <img class="img" src="assets/logo.png" alt="logo da universidade" >
+   
+   <section class="conteudo" id="formulario">
+    <form action="#" method="post">
+        <div class="notas">
+            <label for="nota1">Nota da 1º unidade</label>
+            <input type="number" name="nota1" id="nota1" min="0.0" max="10.0" step="0.1" autofocus required onblur='validarNumero (this)'/>
+        </div>
+
+        <div class="notas">
+            <label for="nota2">Nota da 2º unidade</label>
+            <input type="number" name="nota2" id="nota2" min="0.0" max="10.0" step="0.1" autofocus required onblur='validarNumero (this)'/>
+        </div>
+
+        <div class="notas">
+            <label for="nota3">Nota da 3º unidade</label>
+            <input type="number" name="nota3" id="nota3" min="0.0" max="10.0" step="0.1" autofocus required onblur='validarNumero (this)'/>
+        </div>
+    
+        <div class="botoes">
+            <button class="botao" id="btnCalcular" type="submit">Calcular</button>
+            <button type="reset" id="btnLimpar">Limpar</button>
+        </div>
+
+        
+    <div class="resultado">   
+        <label for="media">Média</label>
+        <input type="number" name="media" id="media" value="" readonly>
+    </div>
+
+    <div class="situ">
+        <input type="text" name="situacao" class="cx" id="situacao" placeholder="Situação Final" readonly>
+
+    </div>
+
+
+    </form>
+    <p id="aviso" class=""></p>
+    </section>
+</main>
+</div> 
+
+<script src="./scripts/notas.js"></script>
+</body>
+</html>
